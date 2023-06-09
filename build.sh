@@ -1,7 +1,7 @@
 #!/bin/bash -e
 cd $(dirname "$0")
 
-podman build --platform=linux/arm64 .
+podman build --platform=linux/386 .
 
 roots=(appstore-apk)
 mkdir -p out
